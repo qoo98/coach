@@ -3,7 +3,6 @@
 import emailjs from '@emailjs/browser'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { FC, useRef, useState } from 'react'
-// import emailjs from "emailjs-com";
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { ContactSchema, ContactType } from '@/schema/contact'
 
