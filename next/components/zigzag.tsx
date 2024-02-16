@@ -35,6 +35,7 @@ export default function Zigzag() {
                   width={540}
                   height={405}
                   alt="Features 01"
+                  data-aos="fade-up"
                 />
               </div>
               {/* Content */}
@@ -99,6 +100,7 @@ export default function Zigzag() {
                   width={540}
                   height={405}
                   alt="Features 02"
+                  data-aos="fade-up"
                 />
               </div>
               {/* Content */}

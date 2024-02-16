@@ -96,6 +96,7 @@ export default function Hero() {
               width={1024}
               height={576}
               alt="Features 01"
+              data-aos="fade-up"
             />
           </div>
 
