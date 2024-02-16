@@ -1,5 +1,5 @@
 # --- Build Stage ---
-FROM --platform=linux/x86_64 node:19.4.0 AS builder
+FROM --platform=linux/x86_64 node:21.6.2 AS builder
 
 # Set the working directory
 WORKDIR /app
@@ -18,7 +18,7 @@ COPY . .
 RUN npm run build
 
 # --- Run Stage ---
-FROM node:19.4.0-alpine
+FROM node:21.6.2-alpine
 
 # Set the working directory
 WORKDIR /app
