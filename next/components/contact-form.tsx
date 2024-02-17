@@ -41,7 +41,7 @@ const ContactForm: FC<ContactFormProps> = () => {
       onSubmit={(event) => {
         void handleSubmit(handleOnSubmit)(event)
       }}
-      className="flex flex-col space-y-4"
+      className="flex flex-col space-y-4 w-full"
       ref={form}
     >
       <label className="flex flex-col">
@@ -63,7 +63,7 @@ const ContactForm: FC<ContactFormProps> = () => {
         <div className="text-sm font-bold mb-1"></div>
         <textarea
           {...register('message')}
-          className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400"
+          className="h-36 w-full bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mr-2 text-white placeholder-purple-400"
           placeholder="お問い合わせ内容"
         ></textarea>
 
@@ -82,7 +82,6 @@ const ContactForm: FC<ContactFormProps> = () => {
         送信
       </button>
       {/* Success message */}
-      {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
       {submitSuccess && (
         <div className="alert alert-success" role="alert">
           メッセージが正常に送信されました。ありがとうございます！

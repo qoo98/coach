@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Home - Open PRO',
+  title: '松本 深志塾',
   description: 'Page description',
 }
 
